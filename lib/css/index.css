@@ -27,12 +27,12 @@
     float: left;
     position: relative;
 }
-.boxSmall {
+/* .boxSmall {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.boxSmall:after{
+} */
+.boxSmall:after,.boxLei:after{
     content: "";
     height: 100%;
     width: 100%;
@@ -40,15 +40,17 @@
     opacity: 0.5;
     position: absolute;
 }
-.boxLei::after{
-    content: "";
+.leiBox{
     height: 100%;
     width: 100%;
     background-image: url("../img/lei.png");
     background-size: 100%;
     position: absolute;
 }
-.numText{
+.numberText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 30px;
     font-weight: bold;
 }
@@ -76,4 +78,20 @@
 .num_7{
     color:#333333
 }
-
+.initBox{
+    width: 100%;
+    height: 100%;
+   
+    position: absolute;
+}
+.initBack{
+    background: #333333;
+    cursor: pointer;
+}
+.unLeiBox{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/findlei.png");
+    background-size: 100%;
+    position: absolute;
+}
